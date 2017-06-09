@@ -1,0 +1,82 @@
+<section>
+    <div class="container col-sm-8 col-sm-offset-2 text-center">
+        <h2>Antes de começar, precisamos nos conhecer. Doar é uma plataforma que facilita e promove a doação de sangue. Agora é sua vez de se apresentar.</h2>
+            <form>
+                <!-- NOME -->
+                <div class="form-group">
+                    <div class="row" ng-show="true">
+                        <label>Olá, qual o seu nome?</label>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <input class="form-control text-center" type="text"
+                                placeholder="Insira o seu nome" ng-model="dados.nome">
+                            </div>
+                            <div class="col-sm-6">
+                                <input class="form-control text-center" type="text"
+                                placeholder="Insira o seu sobrenome" ng-model="dados.sobrenome" ng-change="email = true">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- IDADE -->
+                <div class="form-group">
+                    <div class="row" ng-show="false">
+                        <label>É um prazer te conhecer, {{dados.nome}}! Agora, sua idade:</label>
+                        <div class="col-sm-12">
+                            <input class="form-control text-center" type="text" placeholder="Data/Mês/Ano"
+                            name="field" ng-model="birthDate" ui-date-mask="DD/MM/YYYY">
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CPF -->
+                <div class="form-group">
+                    <div class="row" ng-show="false">
+                        <label>Nos desculpe a formalidade, mas qual o seu CPF?</label>
+                        <div class="col-sm-12">
+                            <input class="form-control text-center" placeholder="000.000.000-00" type="text"
+                            name="field" ng-model="initializedCpf" ui-br-cpf-mask>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- E-MAIL -->
+                <div class="form-group">
+                    <div class="row" ng-show="email">
+                        <label>Precisamos do seu email, ele será seu login.</label>
+                        <p>E não se preocupe, só mandaremos um email se for muito importante!</p>
+                        <div class="col-sm-12">
+                            <input class="form-control text-center" type="email"
+                            placeholder="voce@seuemail.com" ng-model="dados.email" ng-change="senha = true">
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- SENHA -->
+                <div class="form-group">
+                    <div class="row" ng-show="senha">
+                        <label>Crie uma senha, ela será usada no seu login.</label>
+                        <div class="col-sm-12">
+                            <input class="form-control text-center" type="password"
+                            placeholder="Senha" ng-model="dados.senha" ng-change="botao = true">
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- BOTAO DE CADASTRO -->
+                <div class="row" ng-show="botao">
+                    <button class="btn btn-info" type="button" ng-click="cadastrar()">Cadastrar</button>
+                </div>
+
+            </form>
+            <div class="row" ng-show="alerta">
+                <div class="alert alert-success" role="alert">Ótimo! O seu cadastro foi realizado com sucesso!</div>
+            </div>
+    </div>
+</section>
