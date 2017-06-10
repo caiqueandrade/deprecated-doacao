@@ -8,7 +8,15 @@ function rotas($stateProvider, $urlRouterProvider) {
         controller: 'CadastroController'
     };
 
-    $stateProvider.state(cadastro);
+    var home = {
+        name: 'home',
+        url: '/home',
+        templateUrl: 'templates/home.html',
+        controller: 'HomeController'
+    };
 
-    $urlRouterProvider.otherwise('/cadastro');
+    $stateProvider.state(cadastro);
+    $stateProvider.state(home);
+
+    $urlRouterProvider.otherwise('/home');
 }
