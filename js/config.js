@@ -8,6 +8,13 @@ function rotas($stateProvider, $urlRouterProvider) {
         controller: 'CadastroController'
     };
 
+    var login = {
+        name: 'login',
+        url: '/login',
+        templateUrl: 'templates/login.html',
+        controller: 'LoginController'
+    };
+
     var home = {
         name: 'home',
         url: '/home',
@@ -16,6 +23,7 @@ function rotas($stateProvider, $urlRouterProvider) {
     };
 
     $stateProvider.state(cadastro);
+    $stateProvider.state(login);
     $stateProvider.state(home);
 
     $urlRouterProvider.otherwise('/home');
