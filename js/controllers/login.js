@@ -1,6 +1,6 @@
 angular.module('doacao').controller('LoginController', LoginController);
 
-function LoginController($scope, $state){
+function LoginController($scope, $state, $firebaseAuth){
   var auth = $firebaseAuth();
   $scope.dados = {};
   $scope.login = login;
@@ -13,7 +13,8 @@ function LoginController($scope, $state){
   }
 
   function loginSucesso(){
-      $state.go('quadro');
+      console.log('Sucesso');
+      $state.go('home');
   }
 
   function loginErro(erro){

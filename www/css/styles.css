@@ -32,6 +32,16 @@ input:-ms-input-placeholder {
 color: #F7AFB8 !important;
 }
 
+a{
+    color: #F7AFB8;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+
 .background{
     background: linear-gradient(to right, rgba(247, 175, 184, 1), rgba(249, 102, 99, 1));
     /*position: absolute;

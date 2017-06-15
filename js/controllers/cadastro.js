@@ -15,7 +15,8 @@ function CadastroController($scope, $firebaseAuth, $firebaseArray, $state){
 
     function cadastrarSucesso(){
         console.log($scope.dados)
-        // usuarios.$add($scope.dados);
+        usuarios.$add($scope.dados);
         $scope.alerta = true;
+        $state.go('home');
     };
 }
