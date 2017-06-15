@@ -1,20 +1,43 @@
 <section>
-    <div class="container col-sm-8 col-sm-offset-2 text-center">
-        <img ng-src="../css/images/logo01.png" alt="logo" class="logo">
-        <h3 class="sub-titulo">Olá {{dados.nome}},</h3>
-        <h3 class="sub-titulo">Procure os hemocentros mais próximos de você.</h3>
+    <div class="container-externo col-sm-12 text-center">
+        <div class="container col-sm-8 col-sm-offset-2 text-center">
+            <!-- HEADER -->
+            <img ng-src="../css/images/logo01.png" alt="logo" class="logo">
+            <h3 class="sub-titulo">Olá {{dados.nome}},</h3>
+            <h3 class="sub-titulo">Procure os hemocentros mais próximos de você.</h3>
 
-        <div class="row">
-            <div class="col-sm-10 col-sm-offset-1">
-                <form>
-                    <div class="form-group" id="divIputCep">
-                        <input class="form-control" id="inputCep"  type="text" placeholder="CEP">
-                        <span id="teste"></span>
-                        <!-- <button class="glyphicon glyphicon-search" id="botaoCep" aria-hidden="true"></button> -->
-                    </div>
-                </form>
+            <!-- BUSCA -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <form>
+                        <div class="form-group" id="divIputCep">
+                            <input class="form-control" id="inputCep"  type="text" placeholder="CEP">
+                            <span id="teste"></span>
+                            <!-- <button class="glyphicon glyphicon-search" id="botaoCep" aria-hidden="true"></button> -->
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
 
+        <!-- MAPA -->
+        <div class="col-sm-12">
+            <div class="mapa"></div>
+
+            <!-- AGENDAMENTO -->
+            <div class="agendamento">
+                <span class="glyphicon glyphicon-calendar" aria-hidden="true"
+                ng-mouseover="aparecer=true" ng-mouseleave="aparecer=false"></span>
+                <div class="box-agendamento" ng-show="aparecer">
+                    <p class="paragrafo-calendario text-left">Crie um lembrete na sua agenda para a sua próxima doação</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CALENDÁRIO -->
+        <div class="col">
+
+        </div>
+
+    </div>
 </section>
