@@ -83,6 +83,10 @@ a:hover{
     padding: 5px 0px 0px 10px;
 }
 
+.teste{
+    background: url('images/lupa.png') no-repeat 99% 3px;
+}
+
 #inputCadastro {
   border: none;
   background: transparent;
@@ -95,7 +99,6 @@ a:hover{
 
 #inputCep {
   border: none;
-  background: transparent;
   border: 1px solid #fff;
   border-radius: 10px;
   height: 45px;
@@ -106,13 +109,4 @@ a:hover{
 
 #divIputCep {
     display: flex;
-}
-
-
-#teste{
-    display: inline-block;
-    position: relative;
-    height: 39px;
-    width: 35px;
-    background-image: url('images/lupa.png');
 }
