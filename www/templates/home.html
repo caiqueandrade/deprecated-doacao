@@ -11,8 +11,8 @@
                 <div class="col-sm-12">
                     <form>
                         <div class="form-group" id="divIputCep">
-                            <input class="form-control teste" id="inputCep"  type="text" placeholder="CEP">
-                            <!-- <button class="glyphicon glyphicon-search" id="botaoCep" aria-hidden="true"></button> -->
+                            <input class="form-control icone-busca" id="inputCep" type="text" name="field"
+                            placeholder="CEP" ng-change="buscar()" ng-model="cep" ui-br-cep-mask>
                         </div>
                     </form>
                 </div>
@@ -21,7 +21,8 @@
 
         <!-- MAPA -->
         <div class="col-sm-12">
-            <div class="mapa"></div>
+            <!-- <div class="mapa"></div> -->
+            <div id="mapa"></div>
 
             <!-- AGENDAMENTO -->
             <div class="agendamento">
@@ -40,3 +41,15 @@
 
     </div>
 </section>
+
+<script>
+  var mapa;
+  function initMap() {
+    mapa = new google.maps.Map(document.getElementById('mapa'), {
+      center: {lat: -34.397, lng: 150.644},
+      zoom: 8
+    });
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBD7IylVnjmcBMmkQ5zOewtahfvj0WFZKc&callback=initMap" async defer>
+</script>
