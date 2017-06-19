@@ -2,6 +2,7 @@ body{
     font-family: 'Poppins', sans-serif;
     color: white;
     font-size: 17px;
+    /*height: 1000px;*/
 }
 
 h3{
@@ -94,12 +95,45 @@ a:hover{
 
 .paragrafo-calendario{
     line-height: 20px;
-    font-size: 15px;
+    font-size: 13px;
     padding: 5px 0px 0px 10px;
 }
 
 .icone-busca{
     background: url('images/lupa.png') no-repeat 99% 3px;
+}
+
+.home-evento img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #EF6663;
+}
+
+.calendario-titulo{
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.subtitulo-calendario{
+    font-size: 13px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.calendario-2{
+    margin-top: 30px;
+}
+
+.botao{
+    margin-top: 40px;
+    font-size: 13px;
+    width: 190px;
+    height: 25px;
+    border: none;
+    border: solid 1px;
+    border-radius: 15px;
+    border-color: white;
+    background-color: transparent;
 }
 
 #inputCadastro {
