@@ -22,9 +22,17 @@ function rotas($stateProvider, $urlRouterProvider) {
         controller: 'HomeController'
     };
 
+    var landing = {
+        name: 'landing',
+        url: '/landing',
+        templateUrl: 'templates/landing.html',
+        controller: 'LandingController'
+    };
+
     $stateProvider.state(cadastro);
     $stateProvider.state(login);
     $stateProvider.state(home);
+    $stateProvider.state(landing);
 
     $urlRouterProvider.otherwise('/home');
 }
