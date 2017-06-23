@@ -26,8 +26,10 @@
 
             <!-- AGENDAMENTO -->
             <div class="agendamento">
-                <span class="glyphicon glyphicon-calendar" aria-hidden="true"
-                ng-mouseover="aparecer=true" ng-mouseleave="aparecer=false"></span>
+                <img src="css/images/calendario.svg" class="calendario-icon" alt="Calendário" aria-hidden="true"
+                ng-mouseover="aparecer=true" ng-mouseleave="aparecer=false" align="left"></img>
+                <!-- <span class="glyphicon glyphicon-calendar" aria-hidden="true"
+                ng-mouseover="aparecer=true" ng-mouseleave="aparecer=false"></span> -->
                 <div class="box-agendamento" ng-show="aparecer">
                     <p class="paragrafo-calendario text-left">Crie um lembrete na sua agenda para a sua próxima doação</p>
                 </div>
@@ -37,7 +39,7 @@
         <!-- CALENDÁRIO -->
         <div class="col-sm-12 titulo-calendario">
             <h3 class="calendario-titulo">Calendário</h3>
-            <p class="subtitulo-calendario">Calendário Solidário</p>
+            <p class="subtitulo-calendario">Fique por dentro do que acontece na sua cidade.</p>
         </div>
         <div class="row">
             <div class="col-sm-3 home-evento">
@@ -81,7 +83,20 @@
             </div>
 
             <div class="row">
-                <button class="botao">Mais eventos</button>
+                <button class="botao icone-eventos">Mais eventos</button>
+            </div>
+        </div>
+
+        <!-- PONTUAÇÃO -->
+        <div class="col-sm-12 pontuacao">
+            <img class="icone-pontuacao" src="css/images/nivel-icon.svg" alt="Nível Verde">
+            <h3 class="pontuacao-titulo">114 pontos</h3>
+            <div class="row">
+                <button class="botao-pontuacao icone-pontos">Trocar Pontos</button>
+            </div>
+            <h3 class="pontuacao-titulo">Faltam 100 pontos para o nível azul</h3>
+            <div class="outine-nivel">
+                <div class="nivel"></div>
             </div>
         </div>
 
