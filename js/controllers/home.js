@@ -25,6 +25,9 @@ function HomeController($scope, $http){
             console.log($scope.latitude);
             console.log($scope.longitude);
             console.log($scope.cep);
+
+            mapa.setCenter({lat: $scope.latitude, lng: $scope.longitude});
+            mapa.setZoom(14);
         }
         else {
             console.log('CEP inválido.');
