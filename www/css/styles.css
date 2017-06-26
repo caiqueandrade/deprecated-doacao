@@ -1,12 +1,12 @@
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 17px;
-    /*height: 1000px;*/
 }
 
 h3{
-    font-size: 17px;
+    font-size: 23px;
+    font-weight: 100;
 }
 
 label {
@@ -15,6 +15,10 @@ label {
     margin-bottom: 5px;
     font-weight: 700;
     margin-top: 70px;
+}
+
+p{
+    font-weight: lighter;
 }
 
 input::-webkit-input-placeholder {
@@ -52,8 +56,8 @@ a:hover{
 }
 
 .botao{
-    margin-top: 40px;
-    font-size: 13px;
+    font-size: 16px;
+    font-weight: lighter;
     width: 225px;
     height: 32px;
     border: none;
@@ -65,14 +69,6 @@ a:hover{
 
 .botao-pontuacao{
     margin-top: 14px;
-    font-size: 13px;
-    width: 225px;
-    height: 32px;
-    border: none;
-    border: solid 1px;
-    border-radius: 15px;
-    border-color: white;
-    background-color: transparent;
 }
 
 .box-agendamento{
@@ -99,18 +95,47 @@ a:hover{
 }
 
 .calendario-categoria1{
-    width: 36%;
+    width: 42%;
     height: 19px;
     border: none;
     border-radius: 15px;
-    background: linear-gradient(to right, rgba(123, 255, 77, 1), rgba(139, 255, 172, 1));
+    background: linear-gradient(to right, #7bff4d, #8bffac);
     margin-top: 3px;
     margin-left: 3px;
 }
 
-.titulo-categoria1{
-    font-size: 14px;
-    color: white;
+.calendario-categoria2{
+    width: 42%;
+    height: 19px;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(to right, #2980ff, #00dcff);
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+.calendario-categoria3{
+    width: 42%;
+    height: 19px;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(to right, #7d38ff, #6c80ff);
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+.calendario-categoria4{
+    width: 42%;
+    height: 19px;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(to right, #ff9d74, #ffb018);
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+.caption{
+    padding: 9px;
 }
 
 .glyphicon-calendar{
@@ -139,6 +164,26 @@ a:hover{
     background: url('images/lupa.png') no-repeat 99% 3px;
 }
 
+.icone-compartilhe{
+    background: url('images/compartilhe.svg') no-repeat 10%;
+    border: none;
+    float: right;
+}
+
+.icone-classificacao{
+    width: 8%;
+    margin-top: 10%;
+}
+
+.icone-conquistas{
+    background: url('images/conquistas.svg') no-repeat 10%;
+}
+
+.icone-nivel-azul{
+    width: 3.5%;
+    margin-top: -2.3%;
+}
+
 .icone-pontos{
     background: url('images/trocar-pontos-icon.svg') no-repeat 10%;
 }
@@ -160,6 +205,7 @@ a:hover{
 
 .logo{
     margin-top: 40px;
+    width: 17%;
 }
 
 .mapa{
@@ -181,7 +227,7 @@ a:hover{
 
 .outine-nivel{
     display: block;
-    margin-top: 40px;
+    margin-top: 15px;
     font-size: 13px;
     width: 100%;
     height: 32px;
@@ -209,6 +255,13 @@ a:hover{
     border-top: 1px solid #C7C7C7;
     font-weight: lighter;
 }
+
+.classificacao-titulo{
+    margin-top: 0;
+}
+
+.slide-icon{
+    width: 6%;
 }
 
 .sub-titulo{
@@ -216,29 +269,57 @@ a:hover{
 }
 
 .subtitulo-calendario{
-    font-size: 13px;
+    font-size: 18px;
     margin-bottom: 30px;
     margin-top: 5px;
+    font-weight: lighter;
 }
 
 .sub-titulo-categoria1{
-    font-weight: 600;
+    font-weight: 400;
     color: #6F6F6F;
     padding-left: 5px;
     padding-top: 15px;
 }
 
-.thumbnail img{
+.thumbnail1 img, .thumbnail2 img, .thumbnail3 img, .thumbnail4 img{
     width: 100%;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
 
-.thumbnail{
+.thumbnail1{
     background: #E8FFE0;
     border-radius: 10px;
     box-shadow: 0px 0px 15px #EF6663;
     padding: 0;
+}
+
+.thumbnail2{
+    background: #E3FDFF;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #EF6663;
+    padding: 0;
+}
+
+.thumbnail3{
+    background: #E3E4FF;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #EF6663;
+    padding: 0;
+}
+
+.thumbnail4{
+    background: #fff6e9;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #EF6663;
+    padding: 0;
+}
+
+.titulo-categoria1{
+    font-size: 14px;
+    color: white;
+    font-weight: 100;
 }
 
 
@@ -261,6 +342,7 @@ a:hover{
   box-shadow: none;
   color: #fff;
   font-size: 27px;
+  font-weight: lighter;
   margin-top: 50px;
   margin-bottom: 25px;
 }
