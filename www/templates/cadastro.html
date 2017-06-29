@@ -1,13 +1,13 @@
 <section>
     <div class="container col-sm-8 col-sm-offset-2 text-center">
-        <img ng-src="../css/images/logo01.png" alt="logo" class="logo">
+        <img ng-src="css/images/logo.svg" alt="logo" class="logo">
         <h3 class="titulo">Olá</h3>
-        <h3 class="sub-titulo">Antes de começar, precisamos nos conhecer. Doar é uma plataforma que facilita e promove a doação de sangue. Agora é sua vez de se apresentar.</h3>
+        <h3 class="sub-titulo">A essa altura você ja sabe alguma coisa sobre nós. Agora precisamos de algumas informações suas. Pode ser?</h3>
             <form>
                 <!-- NOME -->
                 <div class="form-group">
                     <div class="row" ng-show="true">
-                        <label>Olá, qual o seu nome?</label>
+                        <label>Qual o seu nome?</label>
                         <div class="row">
                             <div class="col-sm-6">
                                 <input class="form-control text-center" id="inputCadastro" type="text"
@@ -25,7 +25,7 @@
                 <!-- IDADE -->
                 <div class="form-group">
                     <div class="row" ng-show="idade">
-                        <label>É um prazer te conhecer, {{dados.nome}}! Agora, sua idade:</label>
+                        <label>É um prazer te conhecer, {{dados.nome}}! E a sua idade?</label>
                         <div class="col-sm-12">
                             <input class="form-control text-center" id="inputCadastro" type="text" placeholder="Data/Mês/Ano"
                             name="field" ng-model="dados.nascimento" ui-date-mask="DD/MM/YYYY" ng-change="cpf = true">
@@ -37,7 +37,8 @@
                 <!-- CPF -->
                 <div class="form-group">
                     <div class="row" ng-show="cpf">
-                        <label>Nos desculpe a formalidade, mas qual o seu CPF?</label>
+                        <label>Informe também o seu CPF.</label>
+                        <p class="legenda">Nos desculpe a formalidade.</p>
                         <div class="col-sm-12">
                             <input class="form-control text-center" id="inputCadastro" placeholder="000.000.000-00" type="text"
                             name="field" ng-model="dados.cpf" ui-br-cpf-mask ng-change="email = true">
@@ -50,7 +51,7 @@
                 <div class="form-group">
                     <div class="row" ng-show="email">
                         <label>Precisamos do seu email, ele será seu login.</label>
-                        <p>E não se preocupe, só mandaremos um email se for muito importante!</p>
+                        <p class="legenda">E não se preocupe, só mandaremos um email se for muito importante!</p>
                         <div class="col-sm-12">
                             <input class="form-control text-center" id="inputCadastro" type="email"
                             placeholder="voce@seuemail.com" ng-model="dados.email" ng-change="senha = true">
@@ -62,7 +63,7 @@
                 <!-- SENHA -->
                 <div class="form-group">
                     <div class="row" ng-show="senha">
-                        <label>Crie uma senha, ela será usada no seu login.</label>
+                        <label>Por último, crie um senha.</label>
                         <div class="col-sm-12">
                             <input class="form-control text-center" id="inputCadastro" type="password"
                             placeholder="Senha" ng-model="dados.senha" ng-change="botao = true">
@@ -73,7 +74,7 @@
 
                 <!-- BOTAO DE CADASTRO -->
                 <div class="row" ng-show="botao">
-                    <button class="botao" type="button" ng-click="cadastrar()">Cadastrar</button>
+                    <button class="botao-cadastro" type="button" ng-click="cadastrar()">Cadastrar</button>
                 </div>
 
             </form>
