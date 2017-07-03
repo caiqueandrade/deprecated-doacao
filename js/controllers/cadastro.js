@@ -24,7 +24,7 @@ function CadastroController($scope, $firebaseAuth, $firebaseArray, $state){
         $scope.dados.nascimento = $scope.dados.nascimento.getDate().toString() + '/' + ($scope.dados.nascimento.getMonth() + 1).toString() + '/' + $scope.dados.nascimento.getFullYear().toString();
         console.log($scope.dados);
         // usuarios.$add($scope.dados);
-        hemocentros.$add($scope.hemocentros);
+        // hemocentros.$add($scope.hemocentros);
         $scope.alerta = true;
         $state.go('home');
     };

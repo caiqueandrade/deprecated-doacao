@@ -27,7 +27,10 @@ function HomeController($scope, $http){
             console.log($scope.cep);
 
             mapa.setCenter({lat: $scope.latitude, lng: $scope.longitude});
-            mapa.setZoom(14);
+            marker.setPosition({lat: $scope.latitude, lng: $scope.longitude});
+            marker.setMap(mapa);
+            mapa.setZoom(15);
+
         }
         else {
             console.log('CEP inválido.');
@@ -37,4 +40,5 @@ function HomeController($scope, $http){
     function buscarErro(){
         console.log('Erro');
     }
+
 }

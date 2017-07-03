@@ -134,11 +134,18 @@
 
 <script>
   var mapa;
+  var marker;
+
   function initMap() {
     mapa = new google.maps.Map(document.getElementById('mapa'), {
       center: {lat: -23.5983334, lng: -46.6801129},
       zoom: 11
     });
+
+    marker = new google.maps.Marker({
+    position: {lat: 0, lng: 0},
+    map: mapa,
+  });
   }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBD7IylVnjmcBMmkQ5zOewtahfvj0WFZKc&callback=initMap" async defer>
