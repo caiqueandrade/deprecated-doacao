@@ -13,6 +13,8 @@ h1{
     font-family: 'Poppins', sans-serif;
     font-size: 153px;
     font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: -13px;
 }
 
 label {
@@ -72,9 +74,21 @@ a:hover{
       font-weight: lighter;
       margin-top: 50px;
       margin-bottom: 25px;
-      background: linear-gradient(to right, #edc689, #ef6b31);
+      background: linear-gradient(to right, #edc689, #edc689, #efb631, #ef6b31);
+}
 
-
+.barra-cep-landing{
+      border: none;
+      border-radius: 10px;
+      height: 54px;
+      outline: none;
+      box-shadow: 0px 0px 25px #F96663;
+      color: #fff;
+      text-align: left;
+      font-size: 40px;
+      font-weight: lighter;
+      margin-bottom: 25px;
+      background: linear-gradient(to right, #edc689, #edc689, #efb631, #ef6b31);
 }
 
 .botao{
@@ -111,6 +125,11 @@ a:hover{
 
 .botao-pontuacao{
     margin-top: 14px;
+}
+
+.botoesLanding{
+    text-align: center;
+    margin-top: 5%;
 }
 
 .calendario-icon{
@@ -171,6 +190,10 @@ a:hover{
     padding: 9px;
 }
 
+.classificacao-titulo{
+    margin-top: 0;
+}
+
 .glyphicon-calendar{
     margin-top: 25px;
     float: left;
@@ -217,6 +240,12 @@ a:hover{
     margin-top: -2.3%;
 }
 
+.icone-pin{
+    background: url(images/pin-icon.svg) no-repeat 0% 0px;
+    height: 76%;
+    margin: 0;
+}
+
 .icone-pontos{
     background: url('images/trocar-pontos-icon.svg') no-repeat 10%;
 }
@@ -226,11 +255,17 @@ a:hover{
     margin-top: 10%;
 }
 
+.icone-scrollDown{
+    background: url('images/scrollDown.svg') no-repeat 80%;
+    height: 40px;
+    width: 3%;
+    border: none;
+}
+
 .icone-seta-down{
     background: url('images/seta-down.svg') no-repeat 80%;
     border: none;
 }
-
 
 .layer {
     background: linear-gradient(to bottom, rgba(247, 175, 184, 0), rgba(249, 102, 99, 1));
@@ -307,10 +342,6 @@ a:hover{
     font-weight: lighter;
 }
 
-.classificacao-titulo{
-    margin-top: 0;
-}
-
 .slide-icon{
     width: 6%;
 }
@@ -331,6 +362,11 @@ a:hover{
     color: #6F6F6F;
     padding-left: 5px;
     padding-top: 15px;
+}
+
+.sub-titulo-chamadaCep{
+    padding-left: 6%;
+    margin: 0;
 }
 
 .thumbnail1 img, .thumbnail2 img, .thumbnail3 img, .thumbnail4 img{
