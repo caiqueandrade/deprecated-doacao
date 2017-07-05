@@ -4,17 +4,24 @@ body{
     font-size: 17px;
 }
 
-h3{
-    font-size: 23px;
-    font-weight: 100;
-}
-
 h1{
     font-family: 'Poppins', sans-serif;
     font-size: 153px;
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: -13px;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 62px;
+    font-weight: 700;
+    margin: 0;
+    }
+
+h3{
+    font-size: 23px;
+    font-weight: 100;
 }
 
 label {
@@ -256,10 +263,10 @@ a:hover{
 }
 
 .icone-scrollDown{
-    background: url('images/scrollDown.svg') no-repeat 80%;
-    height: 40px;
+    background: url('images/scrollDown.svg') no-repeat 0%;
     width: 3%;
     border: none;
+    padding-top: 16%
 }
 
 .icone-seta-down{
@@ -321,6 +328,11 @@ a:hover{
     padding: 5px 0px 0px 10px;
 }
 
+
+.pontuacao{
+    margin-top: 10%;
+}
+
 .pontuacao-titulo{
     margin-bottom: 0;
 }
@@ -342,12 +354,17 @@ a:hover{
     font-weight: lighter;
 }
 
+.pontuacao-landing{
+    color: #eda5ae;
+}
+
 .slide-icon{
     width: 6%;
 }
 
 .sub-titulo{
     font-size: 20px;
+    padding-left: 23%;
 }
 
 .subtitulo-calendario{
