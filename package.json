@@ -8,6 +8,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "angular-scroll": "^1.0.2",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-watch": "^4.3.11"
