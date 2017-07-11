@@ -135,6 +135,11 @@
 <script>
   var mapa;
   var marker;
+  var hemocentros = [
+      {lat: -23.6174386, lng: -46.6376834},
+      {lat: -23.5898909, lng: -46.6304866},
+      {lat: -23.5937469, lng: -46.641518}
+  ];
 
   function initMap() {
     mapa = new google.maps.Map(document.getElementById('mapa'), {
@@ -142,10 +147,22 @@
       zoom: 11
     });
 
-    marker = new google.maps.Marker({
-    position: {lat: 0, lng: 0},
-    map: mapa,
-  });
+    for(var i in hemocentros){
+        var hemocentro = hemocentros[i];
+
+        new google.maps.Marker({
+            position: hemocentro,
+            map: mapa,
+        });
+    }
+
+    marker = [new google.maps.Marker({
+        position: {lat: 0, lng: 0},
+        map: mapa,
+        })
+    ];
+
+
   }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBD7IylVnjmcBMmkQ5zOewtahfvj0WFZKc&callback=initMap" async defer>
