@@ -1,6 +1,6 @@
 angular.module('doacao').controller('HomeController', HomeController);
 
-function HomeController($scope, $http){
+function HomeController($scope, $http, $interval){
     $scope.buscar = buscar;
     $scope.buscarSucesso = buscarSucesso;
     $scope.cep;
@@ -40,5 +40,31 @@ function HomeController($scope, $http){
     function buscarErro(){
         console.log('Erro');
     }
+
+    // $interval($http.get('http://localhost:3000/hemocentros').then(function(response){
+    //     for(var i in response.data){
+    //         var hemocentro = response.data[i];
+    //
+    //         new google.maps.Marker({
+    //             position: hemocentro,
+    //             map: mapa,
+    //         })
+    //     }
+    // }), 2000);
+
+
+    $interval($scope.acessarApi = function(){
+        $http.get('http://localhost:3000/hemocentros').then(function(resposta){
+            for(var i in resposta.data){
+                var hemocentroLat = Number(resposta.data[i].lat);
+                var hemocentroLng = Number(resposta.data[i].lng);
+
+                new google.maps.Marker({
+                    position: {lat: hemocentroLat, lng: hemocentroLng},
+                    map: mapa,
+                });
+            }
+        })
+    }, 500);
 
 }
