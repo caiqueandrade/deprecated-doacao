@@ -54,7 +54,7 @@ function HomeController($scope, $http, $interval){
 
 
     $interval($scope.acessarApi = function(){
-        $http.get('http://localhost:3000/hemocentros').then(function(resposta){
+        $http.get('http://http://174.138.68.160:3000/hemocentros').then(function(resposta){
             for(var i in resposta.data){
                 var hemocentroLat = Number(resposta.data[i].lat);
                 var hemocentroLng = Number(resposta.data[i].lng);
