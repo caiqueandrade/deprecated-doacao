@@ -17,20 +17,24 @@
         <!-- BUSCA -->
             <div class="col-sm-12 barra-cep-margin">
                     <div class="barra-cep-landing col-sm-10 col-sm-offset-1">
+                        <span class="sub-titulo-chamadaCep active icone-pin">CEP DE CASA</span>
                         <span class="sub-titulo-chamadaCep icone-pin">CEP DO TRABALHO</span>
+                        <span class="sub-titulo-chamadaCep icone-pin">CEP DA FACULDADE</span>
+                        <span class="sub-titulo-chamadaCep icone-pin">CEP DA CASA DO PRIMO</span>
                     </div>
             </div>
         </div>
 
         <!-- BOTÕES -->
         <div class="row col-sm-12 botoesLanding">
-            <button class="botao">Criar conta</button>
-            <button class="botao">Login</button>
+            <button class="botao" ng-click="redirecionarCadastro()">Criar conta</button>
+            <button class="botao" ng-click="redirecionarLogin()">Login</button>
         </div>
 
         <div class="col-sm-12 text-center">
             <button class="icone-scrollDown" align="center"></button>
         </div>
+
 
         <!-- PONTUAÇÃO -->
         <div class="col-sm-12 pontuacao">
@@ -40,7 +44,7 @@
         </div>
 
         <div class="col-sm-12 text-center">
-            <h1 class="pontuacao-landing">1.450</h1>
+            <h1 class="pontuacao-landing">{{contador}}</h1>
         </div>
 
         <div class="col-sm-12 text-center">
@@ -64,3 +68,19 @@
         </div> -->
 </div>
 </section>
+
+<script>
+    var textos = document.querySelectorAll('.sub-titulo-chamadaCep');
+    var textoActive = 0;
+
+    var trocarTexto = function(){
+        textos[textoActive].classList.remove('active');
+        textoActive++;
+        if(textoActive == textos.length){
+            textoActive = 0;
+        }
+        textos[textoActive].classList.add('active');
+    };
+
+    setInterval(trocarTexto, 1000);
+</script>

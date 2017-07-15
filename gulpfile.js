@@ -19,3 +19,7 @@ gulp.task('scripts', function () {
 gulp.task('watch', function () {
     gulp.watch('js/**/*', ['scripts']);
 });
+
+
+// /home/caique/Área de Trabalho/Projetos/MasterTech/doacao/bower_components/ngSmoothScroll/dist/angular-smooth-scroll.min.js
+// /home/caique/Área de Trabalho/Projetos/MasterTech/doacao/bower_components/ngSmoothScroll/lib/angular-smooth-scroll.js

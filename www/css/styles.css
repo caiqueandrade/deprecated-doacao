@@ -252,9 +252,8 @@ a:hover{
 }
 
 .icone-pin{
-    background: url(images/pin-icon.svg) no-repeat 0% 0px;
-    height: 76%;
-    margin: 0;
+    background: url('images/pin-icon.svg') no-repeat 0% 3px;
+    height: 5vh;
 }
 
 .icone-pontos{
@@ -386,8 +385,14 @@ a:hover{
 }
 
 .sub-titulo-chamadaCep{
-    padding-left: 6%;
+    padding-left: 6vw;
     margin: 0;
+    display: none;
+    height: 48px;
+}
+
+.active{
+    display: block;
 }
 
 .thumbnail1 img, .thumbnail2 img, .thumbnail3 img, .thumbnail4 img{
