@@ -9,7 +9,7 @@
         <link rel="icon" href="css/images/logo01.png" type="image/gif" sizes="16x16">
         <title>Doação</title>
     </head>
-    <body ng-app="doacao" class="background"> {{$}}
+    <body ng-app="doacao" ng-controller="BodyController" class="background" ng-class="currentState">
         <div class="container">
             <ui-view></ui-view>
         </div>

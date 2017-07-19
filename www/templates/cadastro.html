@@ -28,7 +28,7 @@
                         <label>É um prazer te conhecer, {{dados.nome}}! E a sua idade?</label>
                         <div class="col-sm-12">
                             <input class="form-control text-center" id="inputCadastro" type="text" placeholder="Data/Mês/Ano"
-                            name="field" ng-model="dados.nascimento" ui-date-mask="DD/MM/YYYY" ng-change="cpf = true">
+                            name="field" ng-model="dados.nascimento" ui-date-mask="DD/MM/YYYY" ng-change="cpf = true; scroll('#inputCpf');">
                         </div>
                     </div>
                 </div>
@@ -40,8 +40,8 @@
                         <label>Informe também o seu CPF.</label>
                         <p class="legenda">Nos desculpe a formalidade.</p>
                         <div class="col-sm-12">
-                            <input class="form-control text-center" id="inputCadastro" placeholder="000.000.000-00" type="text"
-                            name="field" ng-model="dados.cpf" ui-br-cpf-mask ng-change="email = true">
+                            <input class="form-control text-center" id="inputCpf" placeholder="000.000.000-00" type="text"
+                            name="field" ng-model="dados.cpf" ui-br-cpf-mask ng-change="email = true; scroll('#inputEmail');">
                         </div>
                     </div>
                 </div>
@@ -53,7 +53,7 @@
                         <label>Precisamos do seu email, ele será seu login.</label>
                         <p class="legenda">E não se preocupe, só mandaremos um email se for muito importante!</p>
                         <div class="col-sm-12">
-                            <input class="form-control text-center" id="inputCadastro" type="email"
+                            <input class="form-control text-center" id="inputEmail" type="email"
                             placeholder="voce@seuemail.com" ng-model="dados.email" ng-change="senha = true">
                         </div>
                     </div>
@@ -81,5 +81,6 @@
             <div class="row" ng-show="alerta">
                 <div class="alert alert-success" role="alert">Ótimo! O seu cadastro foi realizado com sucesso!</div>
             </div>
+        </div>
     </div>
 </section>

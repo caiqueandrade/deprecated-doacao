@@ -16,8 +16,14 @@ function LandingController($scope, $firebaseAuth, $firebaseArray, $state, $inter
     //     }
     // };
 
-    $scope.contador = 0;
+    var contador = 0;
     $interval(function(){
-        $scope.contador = $scope.contador + 14;
+        contador += 10;
+
+        if(contador > 1450){
+            contador = 0;
+        }
+
+        $scope.contador = contador.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
     }, 100);
 }
