@@ -1,13 +1,19 @@
 <section id="background-landing" class="background">
-    <div class="container-externo col-sm-12 text-center background">
-        <div class="container col-sm-8 col-sm-offset-2 text-center">
-            <!-- HEADER -->
-            <img ng-src="css/images/logo.svg" alt="logo" class="logo">
+    <!-- HEADER -->
+    <div class="backgroundLanding">
+            <div class="overlay"></div>
+            <div class="image"></div>
         </div>
 
-        <div class="container-externo col-sm-12">
+    <div class="container-externo col-sm-12 text-center">
+        <!-- HEADER -->
+        <div class="container col-sm-12 text-left">
+            <img ng-src="css/images/logo-02.svg" alt="logo" class="logo">
+        </div>
+
+        <div class="container-externo col-sm-12 margin-topHeader">
             <div class="container col-sm-4 text-right">
-                <p class="sub-titulo bottom-align-text">ENCONTRE OS PONTOS DE COLETA PERTO DE VOCÊ.</p>
+                <p class="sub-titulo">ENCONTRE OS PONTOS DE COLETA PERTO DE VOCÊ.</p>
             </div>
             <div class="position container col-sm-8 text-left">
                 <h1>Doe.</h1>
@@ -50,6 +56,10 @@
         <div class="col-sm-12 text-center">
             <h2>pontos</h2>
         </div>
+    </div>
+</section>
+
+<section class="backgroundPontuação">
 
         <!-- CLASSIFICAÇÃO -->
         <div class="col-sm-12 classificacao-landing">
@@ -60,14 +70,8 @@
                 <li class="list-group-item" id="item-classificacao">FELIPE CASTELLARI</li>
              </ul>
         </div>
-
-
-        <!-- HEADER -->
-        <!-- <div class="imagemBackground">
-            <div class="layer"></div>
-        </div> -->
-</div>
 </section>
+
 
 <script>
     var textos = document.querySelectorAll('.sub-titulo-chamadaCep');

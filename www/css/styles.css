@@ -69,8 +69,27 @@ a:hover{
 .background{
     background: linear-gradient(to right, rgba(247, 175, 184, 1), rgba(249, 102, 99, 1));
 }
+
 .background.landing{
     background: linear-gradient(to bottom, rgba(247, 175, 184, 1), rgba(249, 102, 99, 1));
+}
+
+.backgroundLanding{
+    position: absolute;
+    width: 100%;
+    margin-left: -70px;
+    z-index: -1;
+}
+
+.backgroundLanding .image{
+    width: 100%;
+    background-image: url(images/005.png);
+    background-size: 100% auto;
+    height: 400px;
+}
+
+.backgroundPontuação.landing{
+    background: white;
 }
 
 .barra-cep{
@@ -280,14 +299,6 @@ a:hover{
     border: none;
 }
 
-.layer {
-    background: linear-gradient(to bottom, rgba(247, 175, 184, 0), rgba(249, 102, 99, 1));
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 
 .legenda{
     font-size: 13px;
@@ -295,7 +306,8 @@ a:hover{
 
 .logo{
     margin-top: 40px;
-    width: 17%;
+    width: 10%;
+    margin-left: -70px;
 }
 
 .mapa{
@@ -303,6 +315,10 @@ a:hover{
     height: 350px;
     background: lightgrey;
     border-radius: 10px;
+}
+
+.margin-topHeader{
+    margin-top: 35px;
 }
 
 .nivel{
@@ -354,11 +370,6 @@ a:hover{
 .position{
     position: relative;
 }
-.bottom-align-text{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
 
 .pontuacao-categoria1{
     color: #6F6F6F;
@@ -378,7 +389,8 @@ a:hover{
 
 .sub-titulo{
     font-size: 20px;
-    padding-left: 23%;
+    padding-top: 94px;
+    padding-left: 31px;
 }
 
 .subtitulo-calendario{
