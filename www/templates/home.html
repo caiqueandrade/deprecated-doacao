@@ -42,55 +42,17 @@
             <h3 class="calendario-titulo">Calendário</h3>
             <p class="subtitulo-calendario">Fique por dentro do que acontece na sua cidade.</p>
         </div>
-        <div class="row">
-            <div class="col-sm-3">
+
+        <div class="row rowCalendario">
+            <div class="col-sm-3" ng-repeat="item in cardsCalendario">
                 <div class="thumbnail1">
-                      <img src="css/images/004.jpg" alt="">
+                      <img ng-src="{{item.imagem}}" alt="Imagem">
                       <div class="caption">
                           <div class="calendario-categoria1" align="left">
-                              <p class="titulo-categoria1" align="center">Corrida</p>
+                              <p class="titulo-categoria1" align="center">{{item.titulo}}</p>
                           </div>
-                        <p class="sub-titulo-categoria1" align="left">Corrida em Prol da Associação Bênção de Paz</p>
-                        <p class="pontuacao-categoria1" align="left">400 pts</p>
-                      </div>
-                 </div>
-            </div>
-
-            <div class="col-sm-3">
-                <div class="thumbnail2">
-                      <img src="css/images/002.jpg" alt="">
-                      <div class="caption">
-                          <div class="calendario-categoria2" align="left">
-                              <p class="titulo-categoria1" align="center">Voluntariado</p>
-                          </div>
-                        <p class="sub-titulo-categoria1" align="left">Ajude Famílias Sendo Voluntário da Teto</p>
-                        <p class="pontuacao-categoria1" align="left">800 pts</p>
-                      </div>
-                 </div>
-            </div>
-
-            <div class="col-sm-3">
-                <div class="thumbnail3">
-                      <img src="css/images/003.jpg" alt="">
-                      <div class="caption">
-                          <div class="calendario-categoria3" align="left">
-                              <p class="titulo-categoria1" align="center">Doações</p>
-                          </div>
-                        <p class="sub-titulo-categoria1" align="left">Faça a Diferença na Vida das Crianças no Brasil e no Mundo. Doe Agora Online!</p>
-                        <p class="pontuacao-categoria1" align="left">400 pts</p>
-                      </div>
-                 </div>
-            </div>
-
-            <div class="col-sm-3">
-                <div class="thumbnail4">
-                      <img src="css/images/001.jpg" alt="">
-                      <div class="caption">
-                          <div class="calendario-categoria4" align="left">
-                              <p class="titulo-categoria1" align="center">Campanhas</p>
-                          </div>
-                        <p class="sub-titulo-categoria1" align="left">Corrida em Prol da Associação Bênção de Paz</p>
-                        <p class="pontuacao-categoria1" align="left">400 pts</p>
+                        <p class="sub-titulo-categoria1" align="left">{{item.subTitulo}}</p>
+                        <p class="pontuacao-categoria1" align="left">{{item.pontuacao}} pts</p>
                       </div>
                  </div>
             </div>
@@ -101,6 +63,8 @@
             <img class="slide-icon" src="css/images/slide.svg"></div>
             <button class="botao icone-eventos">Mais eventos</button>
         </div>
+
+
 
         <!-- PONTUAÇÃO -->
         <div class="col-sm-12 pontuacao">
@@ -134,21 +98,34 @@
 </section>
 
 <script>
-  var mapa;
-  var marker;
 
-  function initMap() {
-    mapa = new google.maps.Map(document.getElementById('mapa'), {
-      center: {lat: -23.5983334, lng: -46.6801129},
-      zoom: 11
-    });
+    // MAPA
+    var mapa;
+    var marker;
 
-    marker = [new google.maps.Marker({
-        position: {lat: 0, lng: 0},
-        map: mapa,
+    function initMap() {
+        mapa = new google.maps.Map(document.getElementById('mapa'), {
+            center: {lat: -23.5983334, lng: -46.6801129},
+            zoom: 11
+        });
+
+        marker = [new google.maps.Marker({
+            position: {lat: 0, lng: 0},
+            map: mapa,
         })
     ];
-  }
+    }
+
+    var slides = document.getElementsByClassName('rowCalendario');
+    var activeSlide = 0;
+    function advanceSlide(){
+        slides[activeSlide].classList.remove('active');
+        activeSlide++;
+        if(activeSlide >= slides.length){
+            activeSlide = 0;
+        }
+        slides[activeSlide].classList.add('active');
+    }
+
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBD7IylVnjmcBMmkQ5zOewtahfvj0WFZKc&callback=initMap" async defer>
-</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBD7IylVnjmcBMmkQ5zOewtahfvj0WFZKc&callback=initMap" async defer></script>

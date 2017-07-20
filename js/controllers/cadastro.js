@@ -1,6 +1,6 @@
 angular.module('doacao').controller('CadastroController', CadastroController);
 
-function CadastroController($scope, $firebaseAuth, $firebaseArray, $state, $window, $timeout){
+function CadastroController($scope, $firebaseAuth, $firebaseArray, $state, $window){
     var auth = $firebaseAuth();
     var ref = firebase.database().ref('usuarios');
     var usuarios = $firebaseArray(ref);

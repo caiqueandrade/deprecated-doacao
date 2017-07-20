@@ -315,6 +315,14 @@ a:hover{
     margin-left: 3px;
 }
 
+.rowCalendario{
+    display: none;
+}
+
+.rowCalendario{
+    display: block;
+}
+
 .outine-nivel{
     display: block;
     margin-top: 15px;

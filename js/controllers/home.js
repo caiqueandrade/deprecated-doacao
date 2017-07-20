@@ -4,7 +4,80 @@ function HomeController($scope, $http, $interval){
     $scope.buscar = buscar;
     $scope.buscarSucesso = buscarSucesso;
     $scope.cep;
-    $scope.teste;
+    var cardsDoSlider = [
+        {
+            "imagem": "css/images/004.jpg",
+            "titulo": "Corrida",
+            "subTitulo": "Corrida em Prol da Associação Bênção de Paz",
+            "pontuacao": "400"
+        },
+        {
+            "imagem": "css/images/002.jpg",
+            "titulo": "Voluntariado",
+            "subTitulo": "Ajude Famílias Inteiras Sendo Voluntário da Teto!",
+            "pontuacao": "800"
+        },
+        {
+            "imagem": "css/images/003.jpg",
+            "titulo": "Doações",
+            "subTitulo": "Faça a Diferença na Vida das Crianças. Doe Agora Online!",
+            "pontuacao": "400"
+        },
+        {
+            "imagem": "css/images/001.jpg",
+            "titulo": "Campanhas",
+            "subTitulo": "Corrida em Prol da Associação Bênção de Paz",
+            "pontuacao": "400"
+        },
+        {
+            "imagem": "css/images/001.jpg",
+            "titulo": "Campanhas",
+            "subTitulo": "Corrida em Prol da Associação Bênção de Paz",
+            "pontuacao": "400"
+        },
+        {
+            "imagem": "css/images/004.jpg",
+            "titulo": "Corrida",
+            "subTitulo": "Corrida em Prol da Associação Bênção de Paz",
+            "pontuacao": "400"
+        },
+        {
+            "imagem": "css/images/002.jpg",
+            "titulo": "Voluntariado",
+            "subTitulo": "Ajude Famílias Inteiras Sendo Voluntário da Teto!",
+            "pontuacao": "800"
+        },
+        {
+            "imagem": "css/images/003.jpg",
+            "titulo": "Doações",
+            "subTitulo": "Faça a Diferença na Vida das Crianças. Doe Agora Online!",
+            "pontuacao": "400"
+        },
+        {
+            "imagem": "css/images/003.jpg",
+            "titulo": "Doações",
+            "subTitulo": "Faça a Diferença na Vida das Crianças. Doe Agora Online!",
+            "pontuacao": "400"
+        },
+        {
+            "imagem": "css/images/001.jpg",
+            "titulo": "Campanhas",
+            "subTitulo": "Corrida em Prol da Associação Bênção de Paz",
+            "pontuacao": "400"
+        },
+        {
+            "imagem": "css/images/004.jpg",
+            "titulo": "Corrida",
+            "subTitulo": "Corrida em Prol da Associação Bênção de Paz",
+            "pontuacao": "400"
+        },
+        {
+            "imagem": "css/images/002.jpg",
+            "titulo": "Voluntariado",
+            "subTitulo": "Ajude Famílias Inteiras Sendo Voluntário da Teto!",
+            "pontuacao": "800"
+        }
+    ];
 
     function buscar(){
         var chaveGeocoding = 'AIzaSyAYRQ_bjjljKcoaLeSnYXcj0grJsX9xMXc';
@@ -41,18 +114,6 @@ function HomeController($scope, $http, $interval){
         console.log('Erro');
     }
 
-    // $interval($http.get('http://localhost:3000/hemocentros').then(function(response){
-    //     for(var i in response.data){
-    //         var hemocentro = response.data[i];
-    //
-    //         new google.maps.Marker({
-    //             position: hemocentro,
-    //             map: mapa,
-    //         })
-    //     }
-    // }), 2000);
-
-
     $interval($scope.acessarApi = function(){
         $http.get('http://174.138.68.160:3000/hemocentros').then(function(resposta){
             for(var i in resposta.data){
@@ -67,4 +128,22 @@ function HomeController($scope, $http, $interval){
         })
     }, 500);
 
+
+    var linhaSlider = -1;
+    var qtLinha = 4;
+
+    function trocarSlider(){
+        linhaSlider++;
+        var posicaoInicial = linhaSlider * qtLinha;
+
+        if(posicaoInicial >= cardsDoSlider.length){
+            linhaSlider = 0;
+            posicaoInicial = 0;
+        }
+
+        $scope.cardsCalendario = cardsDoSlider.slice(posicaoInicial, posicaoInicial + qtLinha);
+    }
+
+    $interval(trocarSlider, 3000);
+    trocarSlider();
 }

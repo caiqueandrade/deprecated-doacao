@@ -9,13 +9,6 @@ function LandingController($scope, $firebaseAuth, $firebaseArray, $state, $inter
         $state.go('login');
     };
 
-    // $scope.cronometrar = function(){
-    //     $scope.contador = 0;
-    //     for(var i = 0; i <= 1450; i++){
-    //         $scope.contador++;
-    //     }
-    // };
-
     var contador = 0;
     $interval(function(){
         contador += 10;
