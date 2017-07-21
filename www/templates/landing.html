@@ -1,75 +1,75 @@
 <section id="background-landing" class="background">
-    <!-- HEADER -->
+    <!-- BACKGROUND -->
     <div class="backgroundLanding">
             <div class="overlay"></div>
             <div class="image"></div>
+    </div>
+
+    <!-- HEADER -->
+    <div class="container col-sm-12 text-left">
+        <img ng-src="css/images/logo-02.svg" alt="logo" class="logo">
+    </div>
+
+    <div class="container-externo col-sm-12 margin-topHeader">
+        <div class="container col-sm-4 text-right">
+            <p class="sub-titulo-landing">ENCONTRE OS PONTOS DE COLETA PERTO DE VOCÊ.</p>
         </div>
-
-    <div class="container-externo col-sm-12 text-center">
-        <!-- HEADER -->
-        <div class="container col-sm-12 text-left">
-            <img ng-src="css/images/logo-02.svg" alt="logo" class="logo">
-        </div>
-
-        <div class="container-externo col-sm-12 margin-topHeader">
-            <div class="container col-sm-4 text-right">
-                <p class="sub-titulo">ENCONTRE OS PONTOS DE COLETA PERTO DE VOCÊ.</p>
-            </div>
-            <div class="position container col-sm-8 text-left">
-                <h1>Doe.</h1>
-            </div>
-        </div>
-
-        <!-- BUSCA -->
-            <div class="col-sm-12 barra-cep-margin">
-                    <div class="barra-cep-landing col-sm-10 col-sm-offset-1">
-                        <span class="sub-titulo-chamadaCep active icone-pin">CEP DE CASA</span>
-                        <span class="sub-titulo-chamadaCep icone-pin">CEP DO TRABALHO</span>
-                        <span class="sub-titulo-chamadaCep icone-pin">CEP DA FACULDADE</span>
-                        <span class="sub-titulo-chamadaCep icone-pin">CEP DA CASA DO PRIMO</span>
-                    </div>
-            </div>
-        </div>
-
-        <!-- BOTÕES -->
-        <div class="row col-sm-12 botoesLanding">
-            <button class="botao" ng-click="redirecionarCadastro()">Criar conta</button>
-            <button class="botao" ng-click="redirecionarLogin()">Login</button>
-        </div>
-
-        <div class="col-sm-12 text-center">
-            <button class="icone-scrollDown" align="center"></button>
-        </div>
-
-
-        <!-- PONTUAÇÃO -->
-        <div class="col-sm-12 pontuacao">
-            <div class="container col-sm-4 text-right">
-                <p class="sub-titulo bottom-align-text">SUAS DOAÇÕES VALEM PONTOS POR AQUI.</p>
-            </div>
-        </div>
-
-        <div class="col-sm-12 text-center">
-            <h1 class="pontuacao-landing">{{contador}}</h1>
-        </div>
-
-        <div class="col-sm-12 text-center">
-            <h2>pontos</h2>
+        <div class="position container col-sm-8 text-left">
+            <h1>Doe.</h1>
         </div>
     </div>
-</section>
 
-<section class="backgroundPontuação">
-
-        <!-- CLASSIFICAÇÃO -->
-        <div class="col-sm-12 classificacao-landing">
-            <p>ACOMPANHE SEUS AMIGOS</p>
-            <ul class="list-group">
-                <li class="list-group-item" id="item-classificacao">THAIS JACOPONI </li>
-                <li class="list-group-item" id="item-classificacao">RAFAEL OCHOA</li>
-                <li class="list-group-item" id="item-classificacao">FELIPE CASTELLARI</li>
-             </ul>
+    <!-- BUSCA -->
+    <div class="col-sm-12 barra-cep-margin">
+        <div class="barra-cep-landing col-sm-10 col-sm-offset-1">
+            <span class="sub-titulo-chamadaCep active icone-pin">CEP DE CASA</span>
+            <span class="sub-titulo-chamadaCep icone-pin">CEP DO TRABALHO</span>
+            <span class="sub-titulo-chamadaCep icone-pin">CEP DA FACULDADE</span>
+            <span class="sub-titulo-chamadaCep icone-pin">CEP DA CASA DO PRIMO</span>
         </div>
+    </div>
+
+    <!-- BOTÕES -->
+    <div class="row col-sm-12 botoesLanding">
+        <button class="botao" ng-click="redirecionarCadastro()">Criar conta</button>
+        <button class="botao" ng-click="redirecionarLogin()">Login</button>
+    </div>
+
+    <div class="col-sm-12 text-center">
+        <button class="icone-scrollDown" align="center"></button>
+    </div>
+
+    <!-- PONTUAÇÃO -->
+    <div class="col-sm-12">
+        <div class="container col-sm-4 text-right">
+            <p class="pontuacao-sub-titulo bottom-align-text">SUAS DOAÇÕES VALEM PONTOS POR AQUI.</p>
+        </div>
+    </div>
+
+    <div class="col-sm-12 text-center">
+        <h1 class="pontuacao-landing">{{contador}}</h1>
+    </div>
+
+    <div class="col-sm-12 text-center">
+        <h2>pontos</h2>
+    </div>
+
+    <!-- CLASSIFICAÇÃO -->
+    <div class="col-sm-12 classificacao-landing">
+        <p>ACOMPANHE SEUS AMIGOS</p>
+        <ul class="list-group">
+            <li class="list-group-item" id="item-classificacao">THAIS JACOPONI </li>
+            <li class="list-group-item" id="item-classificacao">RAFAEL OCHOA</li>
+            <li class="list-group-item" id="item-classificacao">FELIPE CASTELLARI</li>
+        </ul>
+    </div>
+
+        <!-- BENEFÍCIOS -->
+    <div class="col-sm-12">
+        <div class="container col-sm-4 text-right">
+            <p class="beneficios-sub-titulo bottom-align-text">ACUMULE PONTOS E TROQUE POR BENEFÍCIOS REAIS.</p>
+        </div>
+    </div>
 </section>
 
 
