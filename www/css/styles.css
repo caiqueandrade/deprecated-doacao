@@ -70,13 +70,13 @@ a:hover{
 }
 
 .background.landing{
-    background: linear-gradient(to bottom, #ef6663 38%, #eda5ae 60%, #2931a4 96%, #ffffff 80%);
+    background: linear-gradient(to bottom, #ef6663 37%, #eda5ae 55%, #2931a4 90%, #ffffff 78%);
 }
 
 .backgroundLanding{
     position: absolute;
     width: 100%;
-    margin-left: -70px;
+    /*margin-left: -70px;*/
     z-index: -1;
 }
 
@@ -85,6 +85,7 @@ a:hover{
     background-image: url(images/005.png);
     background-size: 100% auto;
     height: 400px;
+    background-repeat: no-repeat;
 }
 
 
@@ -309,7 +310,7 @@ a:hover{
 .logo{
     margin-top: 40px;
     width: 10%;
-    margin-left: -70px;
+    /*margin-left: -70px;*/
 }
 
 .mapa{
