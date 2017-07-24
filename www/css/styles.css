@@ -23,6 +23,10 @@ h3{
     font-weight: 100;
 }
 
+h4{
+    font-weight: bolder;
+}
+
 label {
     display: inline-block;
     max-width: 100%;
@@ -61,8 +65,37 @@ a:hover{
     text-decoration: none;
 }
 
+.active{
+    display: block;
+}
+
 .agendamento{
     margin-top: 25px;
+}
+
+.azul{
+    font-size: 16px;
+    font-weight: lighter;
+    width: 225px;
+    height: 32px;
+    border-radius: 15px;
+    background: linear-gradient(to right, #2980ff, #00dcff);
+    color: white;
+    box-shadow: 0px 0px 29px rgba(63, 63, 63, 0.61);
+    border: none;
+}
+
+.azul2{
+    font-size: 16px;
+    font-weight: lighter;
+    width: 225px;
+    height: 32px;
+    border: none;
+    border: solid 1px;
+    border-radius: 15px;
+    background-color: transparent;
+    color: #2980ff;
+    border-color: #2980ff;
 }
 
 .background{
@@ -70,7 +103,7 @@ a:hover{
 }
 
 .background.landing{
-    background: linear-gradient(to bottom, #ef6663 37%, #eda5ae 55%, #2931a4 90%, #ffffff 78%);
+background: linear-gradient(to bottom, #ef6663 28%, #eda5ae 41%, #2931a4 67%, #ffffff 66%);
 }
 
 .backgroundLanding{
@@ -82,7 +115,7 @@ a:hover{
 
 .backgroundLanding .image{
     width: 100%;
-    background-image: url(images/005.png);
+    background-image: url(images/007.png);
     background-size: 100% auto;
     height: 400px;
     background-repeat: no-repeat;
@@ -121,6 +154,17 @@ a:hover{
     font-size: 20px;
     padding-left: 46%;
     color: #2980ff;
+    margin-top: 27%;
+}
+
+.beneficios-marcadagua{
+    font-size: 134px;
+    line-height: 1;
+    font-weight: bolder;
+    position: absolute;
+    z-index: -1;
+    color: rgba(41, 128, 255, 0.04);
+    right: 36px;
 }
 
 .botao{
@@ -162,6 +206,13 @@ a:hover{
 .botoesLanding{
     text-align: center;
     margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.botoesLanding-rodape{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .calendario-icon{
@@ -228,6 +279,19 @@ a:hover{
 
 .classificacao-titulo{
     margin-top: 0;
+}
+
+.divider{
+    border-color: #ffffff;
+    border-style: solid;
+    border-width: 0 0 1px;
+    height: 10px;
+    margin: 0;
+}
+
+.foto-classificacao{
+    width: 10%;
+    margin-left: 7%;
 }
 
 .glyphicon-calendar{
@@ -302,6 +366,27 @@ a:hover{
     border: none;
 }
 
+.img-spotify{
+    position: absolute;
+    width: 35%;
+    right: 4%;
+    top: -71px;
+}
+
+.img-uber{
+    position: absolute;
+    width: 34%;
+    right: 4%;
+    top: -71px;
+}
+
+.img-amazon{
+    position: absolute;
+    width: 51%;
+    right: -8%;
+    top: -40px;
+}
+
 
 .legenda{
     font-size: 13px;
@@ -311,6 +396,18 @@ a:hover{
     margin-top: 40px;
     width: 10%;
     /*margin-left: -70px;*/
+}
+
+.logo-spotify{
+    width: 60%;
+    margin-top: 5%;
+    margin-bottom: 4%;
+}
+
+.logo-uber{
+    width: 53%;
+    margin-top: 8%;
+    margin-bottom: 8%;
 }
 
 .mapa{
@@ -332,6 +429,11 @@ a:hover{
     background: linear-gradient(to right, rgba(255, 57, 63, 1), rgba(255, 82, 152, 1));
     margin-top: 3px;
     margin-left: 3px;
+}
+
+.nome-classificacao{
+    color: #ce3857;
+    margin-left: 2%;
 }
 
 .rowCalendario{
@@ -387,6 +489,10 @@ a:hover{
     margin-top: 0;
 }
 
+.pts-classificacao{
+    font-weight: bolder;
+}
+
 .slide-icon{
     width: 6%;
 }
@@ -397,8 +503,8 @@ a:hover{
 
 .sub-titulo-landing{
     font-size: 20px;
-    padding-top: 94px;
-    padding-left: 31px;
+    padding-top: 19%;
+    padding-left: 45%;
 }
 
 .subtitulo-calendario{
@@ -420,10 +526,6 @@ a:hover{
     margin: 0;
     display: none;
     height: 48px;
-}
-
-.active{
-    display: block;
 }
 
 .thumbnail1 img, .thumbnail2 img, .thumbnail3 img, .thumbnail4 img{
@@ -460,12 +562,56 @@ a:hover{
     padding: 0;
 }
 
+.thumbmail-beneficios1{
+    width: 25%;
+    height: 150px;
+    border: none;
+    border-radius: 9px;
+    background: linear-gradient(to right, #34d773, #34ff2d);
+    margin-top: 12%;
+    margin-left: 6%;
+    box-shadow: 0px 0px 29px rgba(63, 63, 63, 0.61);
+}
+
+.thumbmail-beneficios2{
+    width: 25%;
+    height: 150px;
+    border: none;
+    border-radius: 9px;
+    background: linear-gradient(to right, #000000, #0b2028, #24949b);
+    margin-top: 12%;
+    margin-left: 6%;
+    box-shadow: 0px 0px 29px rgba(63, 63, 63, 0.61);
+}
+
+.thumbmail-beneficios3{
+    width: 25%;
+    height: 150px;
+    border: none;
+    border-radius: 9px;
+    background: linear-gradient(to right, #ff8500, #ffe051);
+    margin-top: 12%;
+    margin-left: 6%;
+    box-shadow: 0px 0px 29px rgba(63, 63, 63, 0.61);
+}
+
+.titulo-beneficios{
+    margin: 0;
+}
+
 .titulo-categoria1{
     font-size: 14px;
     color: white;
     font-weight: 100;
 }
 
+.titulo-classificacao{
+    margin-left: 5%;
+}
+
+#divIputCep {
+    display: flex;
+}
 
 #inputCadastro {
   border: none;
@@ -497,13 +643,14 @@ a:hover{
     border-radius: 0px;
     border: 0px;
     box-shadow: 0px 0px 15px #444444;
-    color: #ce3857;
+    color: ##ffffff;
     font-weight: 300;
     background: linear-gradient(to right, #ce3087, #ce3857 14%, #ffffff 14%);
 }
 
-#divIputCep {
-    display: flex;
+#lista-classificacao{
+    margin-left: 5%;
+    margin-bottom: 20px;
 }
 
 #mapa{
