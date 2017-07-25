@@ -23,6 +23,10 @@ h3{
     font-weight: 100;
 }
 
+h3.cadastro{
+    font-weight: 400;
+}
+
 h4{
     font-weight: bolder;
 }
@@ -32,7 +36,7 @@ label {
     max-width: 100%;
     margin-bottom: 5px;
     font-weight: 100;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 p{
@@ -103,7 +107,16 @@ a:hover{
 }
 
 .background.landing{
-background: linear-gradient(to bottom, #ef6663 28%, #eda5ae 41%, #2931a4 67%, #ffffff 66%);
+background: linear-gradient(to bottom, #ef6663 28%, #eda5ae 41%, #2931a4 65%, #ffffff 65%);
+}
+
+.background.cadastro{
+background: linear-gradient(to bottom, rgba(247, 175, 184, 1), rgba(249, 102, 99, 1));
+height: 1000px;
+}
+
+.background.home{
+background: linear-gradient(to bottom, rgba(247, 175, 184, 1), rgba(249, 102, 99, 1));
 }
 
 .backgroundLanding{
@@ -415,6 +428,11 @@ background: linear-gradient(to bottom, #ef6663 28%, #eda5ae 41%, #2931a4 67%, #f
     height: 350px;
     background: lightgrey;
     border-radius: 10px;
+}
+
+.margin-cadastro{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .margin-topHeader{
