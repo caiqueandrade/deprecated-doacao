@@ -69,9 +69,6 @@ a:hover{
     text-decoration: none;
 }
 
-.active{
-    display: block;
-}
 
 .agendamento{
     margin-top: 25px;
@@ -307,6 +304,11 @@ background: linear-gradient(to bottom, rgba(247, 175, 184, 1), rgba(249, 102, 99
     margin-left: 7%;
 }
 
+.foto-classificacao-home{
+    width: 7%;
+    margin-left: 5%;
+}
+
 .glyphicon-calendar{
     margin-top: 25px;
     float: left;
@@ -336,6 +338,11 @@ background: linear-gradient(to bottom, rgba(247, 175, 184, 1), rgba(249, 102, 99
 .icone-classificacao{
     width: 8%;
     margin-top: 10%;
+}
+
+.icone-classificacao-home{
+    width: 4%;
+    padding-bottom: 1%;
 }
 
 .icone-conquistas{
@@ -407,8 +414,20 @@ background: linear-gradient(to bottom, rgba(247, 175, 184, 1), rgba(249, 102, 99
 
 .logo{
     margin-top: 40px;
-    width: 10%;
-    /*margin-left: -70px;*/
+    width: 12%;
+    margin-left: 3%;
+}
+
+.logo-cadastro{
+    margin-top: 40px;
+    margin-bottom: 5%;
+    width: 17%;
+}
+
+.logo-home{
+    margin-top: 40px;
+    margin-bottom: 3%;
+    width: 24%;
 }
 
 .logo-spotify{
@@ -452,6 +471,15 @@ background: linear-gradient(to bottom, rgba(247, 175, 184, 1), rgba(249, 102, 99
 .nome-classificacao{
     color: #ce3857;
     margin-left: 2%;
+    display: inline-block;
+    width: 53%;
+}
+
+.nome-classificacao-home{
+    color: white;
+    margin-left: 2%;
+    display: inline-block;
+    width: 18%;
 }
 
 .rowCalendario{
@@ -509,6 +537,13 @@ background: linear-gradient(to bottom, rgba(247, 175, 184, 1), rgba(249, 102, 99
 
 .pts-classificacao{
     font-weight: bolder;
+    color: #ce3857;
+
+}
+
+.pts-classificacao-home{
+    display: inline-block;
+    width: 16%;
 }
 
 .slide-icon{
@@ -627,6 +662,10 @@ background: linear-gradient(to bottom, rgba(247, 175, 184, 1), rgba(249, 102, 99
     margin-left: 5%;
 }
 
+.active{
+    display: block;
+}
+
 #divIputCep {
     display: flex;
 }
@@ -666,8 +705,20 @@ background: linear-gradient(to bottom, rgba(247, 175, 184, 1), rgba(249, 102, 99
     background: linear-gradient(to right, #ce3087, #ce3857 14%, #ffffff 14%);
 }
 
+#item-classificacao-home{
+    border-radius: 0px;
+    border: 0px;
+    color: ##ffffff;
+    font-weight: 300;
+    background: transparent;
+}
+
 #lista-classificacao{
     margin-left: 5%;
+    margin-bottom: 20px;
+}
+
+#lista-classificacao-home{
     margin-bottom: 20px;
 }
 

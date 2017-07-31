@@ -34,5 +34,5 @@ function rotas($stateProvider, $urlRouterProvider) {
     $stateProvider.state(home);
     $stateProvider.state(landing);
 
-    $urlRouterProvider.otherwise('/home');
+    $urlRouterProvider.otherwise('/landing');
 }
